@@ -1,0 +1,32 @@
+:root{
+    --ms_color-sidebar:#051e34;
+    --ms_color-header:#e5e5e5;
+    --ms_blue:#1b72e8;
+}
+
+/*COMMON*/
+.ms_container-app{
+    width: 100%;
+    height: 100vh;
+    /*DEBUG*/
+    border: 5px solid red;
+}
+/*/COMMON*/
+
+/*HEADER*/
+.ms_header-app{
+
+}
+/*/HEADER*/
+
+/*SIDEBAR*/
+.ms_sidebar-app{
+
+}
+/*/SIDEBAR*/
+
+/*MAIN*/
+.ms_main-app{
+
+}
+/*/MAIN*/
