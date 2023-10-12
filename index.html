@@ -18,21 +18,23 @@
             <section class="ms_header-app">
                 <div class="container-fluid p-0">
                     <div class="row align-items-center mx-0">
-                        <div class="col-2 p-0 d-flex px-1 px-md-2">
+                        <button class="col-2 p-0 d-flex px-1 px-md-2">
                             <img class="ms_img-logo-mobile" src="./img/mobile-logo.png" alt="logo-sito-mobile">
                             <img class="ms_img-logo-desktop" src="./img/logo.svg" alt="logo-sito-desktop">
-                        </div>
-                        <div class="ms_container-search-bar col-8 p-0 d-flex ">
-                            <i class="ms-2 d-flex align-items-center fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="ms_container-search-bar col-8 d-flex">
+                            <button><i class="ms-2 d-flex align-items-center fa-solid fa-magnifying-glass"></i></button>
                             <input class="ms-1 ms_search-bar" type="text" name="ms_search-text-bar" id="search-text-bar" placeholder="Prova a cercare: Lezioni di Laravel">
                         </div>
                         <div class="col-2 p-0 d-flex justify-content-end align-items-center px-3">
                             <span class="ms_options-header">
-                                <i class="mx-2 fa-solid fa-list"></i>
-                                <i class="mx-2 fa-solid fa-circle-question"></i>
-                                <i class="mx-2 fa-solid fa-ellipsis-vertical"></i>
+                                <button><i class="mx-1 fa-solid fa-list"></i></button>
+                                <button><i class="mx-1 fa-solid fa-circle-question"></i></button>
+                                <button><i class="mx-1 fa-solid fa-ellipsis-vertical"></i></button>
                             </span>
-                            <i class="ms-2 ms_bell-header fa-solid fa-bell"></i>
+                            <button type="button" class="border-0 bg-transparent btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Profilo Fatturazione Logout">
+                                <i class="ms-1 ms_bell-header fa-solid fa-bell"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -44,30 +46,32 @@
                 <section class="ms_sidebar-app">
                     <div class="container">
                         <div class="row flex-column justify-content-between">
-                            <div class="col-12 d-flex flex-column text-white">
-                                <div class="d-flex justify-content-center align-items-center mb-3 mt-4">
-                                    <i class="fs-2 fs-lg-3 fa-solid fa-house"></i>
+                            <div class="col-12 p-0 d-flex flex-column text-white">
+                                <button class="ms_choose-section d-flex justify-content-center align-items-center mb-2 mt-2 p-2">
+                                    <i class="fs-3 fa-solid fa-house"></i>
                                     <p class="d-none d-lg-inline-block fs-4 mx-2 mb-0">
                                         Home
                                     </p>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center mb-3 mt-4">
-                                    <i class="fs-2 fs-lg-3 fa-solid fa-chart-simple"></i>
+                                </button>
+                                <button class="ms_choose-section d-flex justify-content-center align-items-center mb-2 mt-2 p-2">
+                                    <i class="fs-3 fa-solid fa-chart-simple"></i>
                                     <p class="d-none d-lg-inline-block fs-4 mx-3 mb-0">
                                         Stats
                                     </p>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center mb-3 mt-4">
-                                    <i class="fs-2 fs-lg-3 fa-solid fa-signal"></i>
+                                </button>
+                                <button class="ms_choose-section d-flex justify-content-center align-items-center mb-2 mt-2 p-2">
+                                    <i class="fs-3 fa-solid fa-signal"></i>
                                     <p class="d-none d-lg-inline-block fs-4 mx-2 mb-0">
                                         Signal
                                     </p>
-                                </div>
+                                </button>
                             </div>
-                            <div class="col-12 d-flex justify-content-center align-items-center mb-4 text-white">
-                                <i class="fs-2 fs-lg-3 fa-solid fa-gear"></i>
-                                <p class="d-none d-lg-inline-block mx-2 mb-0 fs-4">Admin</p>
-                            </div>
+                            <button class="col-12 ms_choose-section d-flex justify-content-center align-items-center p-2 mb-4 text-white">
+                                <i class="fs-3 fa-solid fa-gear"></i>
+                                <p class="d-none d-lg-inline-block mx-2 mb-0 fs-4">
+                                    Admin
+                                </p>
+                            </button>
                         </div>
                     </div>
                 </section>
@@ -133,12 +137,12 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="ms_sm-custom-button bg-success text-white">Done</span></td>
                                                 <td>
-                                                    <span class="ms_small-action-pencil">
+                                                    <button class="ms_small-action-pencil">
                                                         <i class="fa-solid fa-pencil"></i>
-                                                    </span>
-                                                    <span class="ms_small-action-trash">
+                                                    </button>
+                                                    <button class="ms_small-action-trash">
                                                         <i class="fa-solid fa-trash"></i>
-                                                    </span>
+                                                    </button>
                                                 </td>
                                               </tr>
                                               <tr>
@@ -147,12 +151,12 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="ms_sm-custom-button bg-success text-white">Done</span></td>
                                                 <td>
-                                                    <span class="ms_small-action-pencil">
+                                                    <button class="ms_small-action-pencil">
                                                         <i class="fa-solid fa-pencil"></i>
-                                                    </span>
-                                                    <span class="ms_small-action-trash">
+                                                    </button>
+                                                    <button class="ms_small-action-trash">
                                                         <i class="fa-solid fa-trash"></i>
-                                                    </span>
+                                                    </button>
                                                 </td>
                                               </tr>
                                               <tr>
@@ -161,12 +165,12 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="ms_sm-custom-button bg-warning text-white">Process</span></td>
                                                 <td>
-                                                    <span class="ms_small-action-pencil">
+                                                    <button class="ms_small-action-pencil">
                                                         <i class="fa-solid fa-pencil"></i>
-                                                    </span>
-                                                    <span class="ms_small-action-trash">
+                                                    </button>
+                                                    <button class="ms_small-action-trash">
                                                         <i class="fa-solid fa-trash"></i>
-                                                    </span>
+                                                    </button>
                                                 </td>
                                               </tr>
                                               <tr>
@@ -175,12 +179,12 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="ms_sm-custom-button bg-success text-white">Done</span></td>
                                                 <td>
-                                                    <span class="ms_small-action-pencil">
+                                                    <button class="ms_small-action-pencil">
                                                         <i class="fa-solid fa-pencil"></i>
-                                                    </span>
-                                                    <span class="ms_small-action-trash">
+                                                    </button>
+                                                    <button class="ms_small-action-trash">
                                                         <i class="fa-solid fa-trash"></i>
-                                                    </span>
+                                                    </button>
                                                 </td>
                                               </tr>
                                               <tr>
@@ -189,12 +193,12 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="ms_sm-custom-button bg-danger text-white">Failed</span></td>
                                                 <td>
-                                                    <span class="ms_small-action-pencil">
+                                                    <button class="ms_small-action-pencil">
                                                         <i class="fa-solid fa-pencil"></i>
-                                                    </span>
-                                                    <span class="ms_small-action-trash">
+                                                    </button>
+                                                    <button class="ms_small-action-trash">
                                                         <i class="fa-solid fa-trash"></i>
-                                                    </span>
+                                                    </button>
                                                 </td>
                                               </tr>
                                               <tr>
@@ -203,12 +207,12 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="ms_sm-custom-button bg-success text-white">Done</span></td>
                                                 <td>
-                                                    <span class="ms_small-action-pencil">
+                                                    <button class="ms_small-action-pencil">
                                                         <i class="fa-solid fa-pencil"></i>
-                                                    </span>
-                                                    <span class="ms_small-action-trash">
+                                                    </button>
+                                                    <button class="ms_small-action-trash">
                                                         <i class="fa-solid fa-trash"></i>
-                                                    </span>
+                                                    </button>
                                                 </td>
                                               </tr>
                                               <tr>
@@ -217,12 +221,12 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="ms_sm-custom-button bg-danger text-white">Failed</span></td>
                                                 <td>
-                                                    <span class="ms_small-action-pencil">
+                                                    <button class="ms_small-action-pencil">
                                                         <i class="fa-solid fa-pencil"></i>
-                                                    </span>
-                                                    <span class="ms_small-action-trash">
+                                                    </button>
+                                                    <button class="ms_small-action-trash">
                                                         <i class="fa-solid fa-trash"></i>
-                                                    </span>
+                                                    </button>
                                                 </td>
                                               </tr>
                                               <tr>
@@ -231,12 +235,12 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="ms_sm-custom-button bg-success text-white">Done</span></td>
                                                 <td>
-                                                    <span class="ms_small-action-pencil">
+                                                    <button class="ms_small-action-pencil">
                                                         <i class="fa-solid fa-pencil"></i>
-                                                    </span>
-                                                    <span class="ms_small-action-trash">
+                                                    </button>
+                                                    <button class="ms_small-action-trash">
                                                         <i class="fa-solid fa-trash"></i>
-                                                    </span>
+                                                    </button>
                                                 </td>
                                               </tr>
                                             </tbody>
@@ -249,15 +253,46 @@
                                       F.A.Q.
                                     </div>
                                     <ul class="list-group list-group-flush">
-                                      <li class="list-group-item d-flex justify-content-between align-items-center">Come aggiungere un nuovo studente?
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                      </li>
-                                      <li class="list-group-item d-flex justify-content-between align-items-center">Come posso accedere alle informazioni del mio account?
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                      </li>
-                                      <li class="list-group-item d-flex justify-content-between align-items-center">Posso usare questa dashboard da mobile?
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                      </li>
+                                        <li class="list-group-item">
+                                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="flush-headingOne">
+                                                    <button class="ms_bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                      Come aggiungere un nuovo studente?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum veritatis eveniet, voluptatum enim error vitae. Asperiores possimus aspernatur, quas recusandae molestiae modi ipsum, nostrum perspiciatis doloribus saepe distinctio fugit ducimus?
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="flush-headingTwo">
+                                                    <button class="ms_bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                      Come posso accedere alle informazioni del mio account?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore accusamus a similique quam eveniet possimus hic nulla deserunt corrupti enim esse, corporis natus. Quae quos fugit similique et eaque.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="flush-headingThree">
+                                                    <button class="ms_bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                      Posso usare questa dashboard da mobile?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum obcaecati nostrum eum vero, delectus accusamus porro cumque, commodi provident mollitia exercitationem? Nisi obcaecati vel consequuntur blanditiis dolor unde, delectus aliquid.
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -325,5 +360,8 @@
                 <!--/Main-->
             </div>
         </div>
+        <script> const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]') 
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))</script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
 </html>

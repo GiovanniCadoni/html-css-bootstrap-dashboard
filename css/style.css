@@ -62,6 +62,12 @@
 .ms_light{
     font-weight: 400;
 }
+
+button{
+    background-color: transparent;
+    color: inherit;
+    border: transparent;
+}
 /*/COMMON*/
 
 /*HEADER*/
@@ -107,7 +113,8 @@
 }
 
 .ms_search-bar{
-    width: 245px;
+    min-width: 245px;
+    width: calc(100% - 24px);
     border: transparent;
     background-color: #e5e5e5;
 }
@@ -141,6 +148,12 @@
 
 .container .row{
     height: 100%;
+}
+
+.ms_choose-section:hover{
+    background-color: grey;
+    border-radius: 5px;
+    padding: 2px 4px;
 }
 
 @media screen and (min-width:992px) {
