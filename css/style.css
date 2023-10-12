@@ -17,6 +17,10 @@
     display: flex;
 }
 
+.ms_debug{
+    border: 2px solid black;
+}
+
 /*/COMMON*/
 
 /*HEADER*/
